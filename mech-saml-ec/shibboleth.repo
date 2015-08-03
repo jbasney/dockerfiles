@@ -1,0 +1,5 @@
+[Shibboleth]
+name=Shibboleth
+baseurl=http://download.opensuse.org/repositories/security://shibboleth/CentOS_7/
+enabled=1
+gpgcheck=0
