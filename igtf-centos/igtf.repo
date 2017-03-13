@@ -1,0 +1,6 @@
+[IGTF]
+name=IGTF
+baseurl=https://dist.igtf.net/distribution/current/
+gpgkey=https://dist.igtf.net/distribution/current/GPG-KEY-EUGridPMA-RPM-3
+gpgcheck=1
+enabled=1
