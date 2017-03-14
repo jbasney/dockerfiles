@@ -4,7 +4,8 @@ FROM jbasney/igtf-centos
 MAINTAINER Jim Basney <jbasney@illinois.edu>
 ENV container docker
 COPY globus-toolkit-repo-latest.noarch.rpm /root
-RUN yum -y update && yum -y install \
+RUN rpm -hUv /root/globus-toolkit-repo-latest.noarch.rpm && \
+    yum -y update && yum -y install \
     gsi-openssh \
     myproxy \
     && yum clean all
