@@ -8,4 +8,5 @@ RUN rpm -hUv /root/globus-toolkit-repo-latest.noarch.rpm && \
     yum -y update && yum -y install \
     gsi-openssh \
     myproxy \
+    perl-Crypt-SSLeay perl-LWP-Protocol-https perl-Mozilla-CA perl-Term-UI \
     && yum clean all
