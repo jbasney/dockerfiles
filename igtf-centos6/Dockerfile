@@ -1,5 +1,5 @@
-# docker build -t jbasney/igtf-centos .
-# docker run --name igtf-centos -it jbasney/igtf-centos /bin/bash
+# docker build -t jbasney/igtf-centos6 .
+# docker run --name igtf-centos6 -it jbasney/igtf-centos6 /bin/bash
 FROM centos:6
 MAINTAINER Jim Basney <jbasney@illinois.edu>
 ENV container docker
