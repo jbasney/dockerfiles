@@ -3,7 +3,7 @@
 FROM debian
 MAINTAINER Jim Basney <jbasney@illinois.edu>
 ENV container docker
-RUN apt-get update && apt-get install -y apt-transport-https apt-utils
+RUN apt-get update && apt-get install -y apt-transport-https apt-utils gnupg
 COPY igtf.list /etc/apt/sources.list.d
 COPY GPG-KEY-EUGridPMA-RPM-3 /root
 RUN apt-key add /root/GPG-KEY-EUGridPMA-RPM-3
