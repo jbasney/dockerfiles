@@ -6,7 +6,7 @@ ENV container docker
 COPY globus-toolkit-repo-latest.noarch.rpm /root
 RUN rpm -hUv /root/globus-toolkit-repo-latest.noarch.rpm && \
     yum -y update && yum -y install \
-    gsi-openssh \
+    gsi-openssh-clients \
     myproxy \
     perl-Crypt-SSLeay perl-LWP-Protocol-https perl-Mozilla-CA perl-Term-UI \
     && yum clean all
